@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+App-ex.jsx
+App-ex.css
+index-ex.css
