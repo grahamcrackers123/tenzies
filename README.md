@@ -5,6 +5,8 @@ An online dice game where you roll until all dice are the same. Click each die t
 [https://grahamcrackers123.github.io/tenzies/](https://grahamcrackers123.github.io/tenzies/)
 
 ## Built With:
+| Layer | Technology |
+| -------- | -------- |
 | Front-end | HTML, CSS, JavaScript, & React |
 | Build Tool | Vite |
 | Modules | nanoid, react-confetti, react-use, clsx |
