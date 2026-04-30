@@ -2,13 +2,14 @@ import { useState } from "react"
 import { nanoid } from "nanoid"
 import Die from "./Die.jsx"
 import Confetti from "react-confetti"
-// import { useWindowSize } from "react-use"
+import { useWindowSize } from "react-use"
 
 
 export default function App() {
 
   const [dice, setDice] = useState(() => generateNewDice())
 
+  const { width, height } = useWindowSize()
   function generateNewDice() {
     // need to fill with something or else it will map over nothing
     return new Array(10).fill(0).map(die => { 
@@ -55,7 +56,7 @@ export default function App() {
 
   return (
     <>
-      <Confetti />
+      {isGameOver ? <Confetti width={width} height={height}/> : null}
       <main>
         <h1>Tenzies</h1>
         <p>Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
