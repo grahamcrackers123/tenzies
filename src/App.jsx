@@ -28,6 +28,10 @@ export default function App() {
     }))
   }
 
+  const isGameOver = dice.every(die => die.isHeld === true && die.value === dice[0].value)
+  
+  console.log('isGameOver', isGameOver)
+
   const diceElements = dice.map(die => {
     return <Die 
       value={die.value} 
@@ -48,7 +52,7 @@ export default function App() {
       <div className="dice-container">
         {diceElements}
       </div>
-      <button className="roll-dice" onClick={rollDice}>Roll</button>
+      <button className="roll-dice" onClick={rollDice}>{isGameOver ? 'New Game' : 'Roll'}</button>
     </main>
   )
 }
