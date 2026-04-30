@@ -22,6 +22,12 @@ export default function App() {
     }))
   }
 
+  function rollDice() {
+    setDice(prevDice => prevDice.map(die => {
+      return die.isHeld === false ? { ...die, value: Math.floor(Math.random() * 6) + 1 } : die
+    }))
+  }
+
   const diceElements = dice.map(die => {
     return <Die 
       value={die.value} 
@@ -31,7 +37,9 @@ export default function App() {
     />
   })
 
-  console.log(dice)
+
+
+  // console.log(dice)
 
   return (
     <main>
@@ -40,7 +48,7 @@ export default function App() {
       <div className="dice-container">
         {diceElements}
       </div>
-      <button className="roll-dice">Roll</button>
+      <button className="roll-dice" onClick={rollDice}>Roll</button>
     </main>
   )
 }
