@@ -1,16 +1,11 @@
-# React + Vite
+# Tenzies
+An online dice game where you roll until all dice are the same. Click each die to freeze it at its current value between rolls. Project idea is from the React course on Scrimba.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Link: 
+[https://grahamcrackers123.github.io/tenzies/](https://grahamcrackers123.github.io/tenzies/)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Built With:
+| Front-end | HTML, CSS, JavaScript, & React |
+| Build Tool | Vite |
+| Modules | nanoid, react-confetti, react-use, clsx |
+| Package | gh-pages |
