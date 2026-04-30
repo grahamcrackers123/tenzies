@@ -10,6 +10,7 @@ export default function App() {
   const [dice, setDice] = useState(() => generateNewDice())
 
   const { width, height } = useWindowSize()
+
   function generateNewDice() {
     // need to fill with something or else it will map over nothing
     return new Array(10).fill(0).map(die => { 
