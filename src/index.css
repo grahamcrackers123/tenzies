@@ -62,8 +62,8 @@ button.is-held {
 
 button.roll-dice {
   border-radius: 3.81px;
-  width: 92px;
-  height: 36px;
+  padding-block: 10px;
+  width: 120px;
   border: none;
   background-color: #5035FF;
   color: white;
