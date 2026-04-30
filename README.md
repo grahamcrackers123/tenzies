@@ -11,3 +11,9 @@ An online dice game where you roll until all dice are the same. Click each die t
 | Build Tool | Vite |
 | Modules | nanoid, react-confetti, react-use, clsx |
 | Package | gh-pages |
+
+## To-be Added
+- Timer where user loses once there's no more time
+- Add sound effects
+- Add option to play with another opponent
+- Add option to play with computer
